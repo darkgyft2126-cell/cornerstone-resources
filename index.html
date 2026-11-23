@@ -3,30 +3,121 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Free Resources — Cornerstone Web Studio</title>
+<title>Cornerstone Web Studio — Websites for Small Businesses</title>
+<meta name="description" content="Cornerstone Web Studio builds simple websites for small businesses. Each site can answer customer questions day and night, from the owner's own answers. Free sample homepage first.">
 <style>
   body { font-family: Georgia, 'Times New Roman', serif; margin: 0; color: #1a1a1a; background: #f7f9fb; }
-  main { max-width: 640px; margin: 0 auto; padding: 48px 20px; }
-  .brand { font-family: Helvetica, Arial, sans-serif; font-weight: bold; letter-spacing: .08em; color: #1F3A5F; font-size: 13px; text-transform: uppercase; }
-  h1 { color: #1F3A5F; font-size: 30px; margin: 10px 0 8px; }
-  p { line-height: 1.55; color: #3D4A5C; }
-  a.btn { display: inline-block; margin-top: 14px; padding: 12px 20px; background: #1F3A5F; color: #fff; text-decoration: none; border-radius: 6px; font-family: Helvetica, Arial, sans-serif; font-size: 15px; }
-  footer { margin-top: 48px; font-size: 13px; color: #5A6572; font-family: Helvetica, Arial, sans-serif; }
+  main { max-width: 880px; margin: 0 auto; padding: 32px 20px 48px; }
+  header.site { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; border-bottom: 2px solid #1F3A5F; padding-bottom: 18px; }
+  header.site img { width: 56px; height: 56px; border-radius: 10px; }
+  .brand-name { font-family: Helvetica, Arial, sans-serif; font-weight: bold; letter-spacing: .06em; color: #1F3A5F; font-size: 19px; text-transform: uppercase; }
+  .brand-sub { font-family: Helvetica, Arial, sans-serif; font-size: 13px; color: #5A6572; margin-top: 3px; }
+  .head-contact { margin-left: auto; font-family: Helvetica, Arial, sans-serif; font-size: 14px; text-align: right; line-height: 1.6; }
+  .head-contact a { color: #1F3A5F; text-decoration: none; font-weight: bold; }
+  h1 { color: #1F3A5F; font-size: 34px; line-height: 1.2; margin: 34px 0 10px; }
+  h2 { color: #1F3A5F; font-size: 25px; margin: 52px 0 8px; }
+  p { line-height: 1.6; color: #3D4A5C; font-size: 17px; }
+  .hero-sub { font-size: 19px; }
+  a.btn { display: inline-block; margin: 12px 10px 0 0; padding: 12px 20px; background: #1F3A5F; color: #fff; text-decoration: none; border-radius: 6px; font-family: Helvetica, Arial, sans-serif; font-size: 15px; }
+  a.btn.light { background: #fff; color: #1F3A5F; border: 1px solid #1F3A5F; }
+  ol.steps { color: #3D4A5C; font-size: 17px; line-height: 1.6; padding-left: 22px; }
+  ol.steps li { margin-bottom: 10px; }
+  ol.steps strong { color: #1F3A5F; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(185px, 1fr)); gap: 14px; margin-top: 18px; }
+  .card { background: #fff; border: 1px solid #d8dee6; border-radius: 10px; padding: 18px; }
+  .card h3 { font-family: Helvetica, Arial, sans-serif; color: #1F3A5F; font-size: 16px; margin: 0 0 6px; }
+  .price { font-family: Helvetica, Arial, sans-serif; font-size: 26px; font-weight: bold; color: #1a1a1a; }
+  .per { font-family: Helvetica, Arial, sans-serif; font-size: 13px; color: #5A6572; }
+  .card p { font-size: 15px; margin: 10px 0 0; }
+  ul.facts { color: #3D4A5C; font-size: 17px; line-height: 1.7; padding-left: 20px; }
+  .cta-band { margin-top: 52px; background: #1F3A5F; border-radius: 10px; padding: 24px; }
+  .cta-band h2 { color: #fff; margin: 0 0 6px; }
+  .cta-band p { color: #dbe4ef; margin: 0; }
+  .cta-band a { color: #fff; font-weight: bold; }
+  footer { margin-top: 48px; font-size: 13px; color: #5A6572; font-family: Helvetica, Arial, sans-serif; border-top: 1px solid #d8dee6; padding-top: 16px; }
+  footer a { color: #1F3A5F; text-decoration: none; }
+  @media (max-width: 560px) {
+    h1 { font-size: 28px; }
+    .head-contact { margin-left: 0; text-align: left; }
+  }
 </style>
 </head>
 <body>
 <main>
-  <div class="brand">Cornerstone Web Studio</div>
-  <h1>The 10-Point Website Checkup</h1>
+  <header class="site">
+    <img src="cornerstone-logo.png" alt="Cornerstone Web Studio logo">
+    <div>
+      <div class="brand-name">Cornerstone Web Studio</div>
+      <div class="brand-sub">Websites for small businesses</div>
+    </div>
+    <div class="head-contact">
+      <a href="mailto:hello@getcornerstoneweb.com">hello@getcornerstoneweb.com</a><br>
+      <a href="tel:+16083520644">(608) 352-0644</a>
+    </div>
+  </header>
+
+  <h1>A website that can't answer questions is the old model.</h1>
+  <p class="hero-sub">Cornerstone Web Studio builds simple websites for small businesses. Each site can answer customer questions day and night, from the owner's own answers. The assistant on this page is a working example — try it.</p>
+  <a class="btn" href="#packages">See the packages</a>
+  <a class="btn light" href="chat-demo/">Try the sample chat</a>
+
+  <h2>How it works</h2>
+  <ol class="steps">
+    <li><strong>We build a sample homepage first, free.</strong> You see your site before you pay.</li>
+    <li><strong>You approve it and pay a 50% deposit.</strong> Each site includes two revision rounds.</li>
+    <li><strong>Your site goes live in 10 business days.</strong> You pay the other 50% on launch. You own the site and the domain. There is no contract.</li>
+  </ol>
+
+  <h2 id="packages">Packages</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>One-Page Site</h3>
+      <div class="price">$399</div>
+      <div class="per">one time</div>
+      <p>One page with your services, your area, and a tap-to-call button. Cornerstone Chat is a $99 add-on.</p>
+    </div>
+    <div class="card">
+      <h3>Standard Site</h3>
+      <div class="price">$799</div>
+      <div class="per">one time</div>
+      <p>A full site with room for your services, your story, and your contact page. Cornerstone Chat included.</p>
+    </div>
+    <div class="card">
+      <h3>CMS Site</h3>
+      <div class="price">$999</div>
+      <div class="per">one time</div>
+      <p>A full site you can update yourself — change the words and pictures when you want. Cornerstone Chat included.</p>
+    </div>
+    <div class="card">
+      <h3>Care Plan</h3>
+      <div class="price">$49</div>
+      <div class="per">per month, optional</div>
+      <p>We make your updates for you: site changes and chat answer updates. Send the change, we do the work.</p>
+    </div>
+  </div>
+
+  <h2>Your website should answer the phone, too.</h2>
+  <p>Most business websites are brochures. They look fine, and they say nothing back. When a customer asks a question at 9 pm, a brochure gives them silence — and they call the next name on the list.</p>
+  <p>Every Cornerstone Web Studio site can include Cornerstone Chat: an assistant trained on your own answers. You fill out one short form — your hours, your services, your prices, your area. The assistant answers from that form, word for word on prices and guarantees. It never guesses. A question outside the form goes straight to your email with the customer's name and contact, so the lead is yours, not lost.</p>
+  <ul class="facts">
+    <li>One-Page site: Cornerstone Chat available as a $99 add-on</li>
+    <li>Standard and CMS sites: Cornerstone Chat included</li>
+    <li>Care Plan: answer updates included — send new answers any time</li>
+  </ul>
+  <a class="btn" href="chat-demo/">Try it on our sample site</a>
+
+  <h2>The 10-Point Website Checkup</h2>
   <p>A free self-test for small business owners. Run it on your phone in about ten minutes: ten checks that show whether your website is sending customers to you — or to the next shop on the list.</p>
   <a class="btn" href="website-checkup.pdf">Download the free checkup (PDF)</a>
 
-  <h1 style="margin-top:56px;">Your website should answer the phone, too.</h1>
-  <p>Most business websites are brochures. They look fine, and they say nothing back. When a customer asks a question at 9 pm, a brochure gives them silence — and they call the next name on the list.</p>
-  <p>Every Cornerstone Web Studio site can include Cornerstone Chat: an assistant trained on your own answers. You fill out one short form — your hours, your services, your prices, your area. The assistant answers from that form, word for word on prices and guarantees. It never guesses. A question outside the form goes straight to your email with the customer's name and contact, so the lead is yours, not lost.</p>
-  <p>Cornerstone Chat is included with our Standard and CMS sites, and available as an add-on on the One-Page site. Try it on a sample plumbing site:</p>
-  <a class="btn" href="chat-demo/">Try the sample chat</a>
-  <footer>Cornerstone Web Studio · getcornerstoneweb.com · hello@getcornerstoneweb.com</footer>
+  <div class="cta-band">
+    <h2>Start with a free sample</h2>
+    <p>Email <a href="mailto:hello@getcornerstoneweb.com">hello@getcornerstoneweb.com</a> or call (608) 352-0644. Tell us your business name and what you do. We build your sample homepage first — you pay nothing until you approve it.</p>
+  </div>
+
+  <footer>Cornerstone Web Studio · getcornerstoneweb.com · <a href="mailto:hello@getcornerstoneweb.com">hello@getcornerstoneweb.com</a> · <a href="tel:+16083520644">(608) 352-0644</a></footer>
 </main>
+<script src="cornerstone-faq.js"></script>
+<script src="cornerstone-chat.js"></script>
 </body>
 </html>
