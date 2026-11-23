@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Northside Plumbing Co. (Sample) — Cornerstone Chat Demo</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; color: #1c2733; background: #fbfaf8; line-height: 1.55; }
+  .sample-banner { background: #7a2d12; color: #fff; text-align: center; padding: 9px 14px; font-size: 14px; font-weight: 600; letter-spacing: .02em; }
+  header.hero { background: #175e9e; color: #fff; padding: 52px 20px 46px; text-align: center; }
+  header.hero h1 { margin: 0 0 10px; font-size: 34px; line-height: 1.15; }
+  header.hero p { margin: 0 auto; max-width: 560px; font-size: 17px; opacity: .93; }
+  header.hero .cta { display: inline-block; margin-top: 20px; background: #fff; color: #175e9e; font-weight: 700; padding: 11px 22px; border-radius: 24px; text-decoration: none; }
+  main { max-width: 880px; margin: 0 auto; padding: 28px 20px 60px; }
+  h2 { font-size: 22px; margin: 34px 0 12px; color: #123c66; }
+  .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; padding: 0; list-style: none; margin: 0; }
+  .services li { background: #fff; border: 1px solid #e3ded6; border-radius: 10px; padding: 14px 16px; }
+  .services strong { display: block; margin-bottom: 4px; }
+  table.hours { border-collapse: collapse; background: #fff; border: 1px solid #e3ded6; border-radius: 10px; overflow: hidden; }
+  table.hours td { padding: 8px 18px 8px 14px; border-bottom: 1px solid #efece7; font-size: 15px; }
+  table.hours tr:last-child td { border-bottom: none; }
+  .try { background: #eef4fa; border: 1px solid #cfdfef; border-radius: 10px; padding: 16px 18px; }
+  .try p { margin: 0 0 10px; font-weight: 600; }
+  .try button { display: block; width: 100%; text-align: left; margin: 6px 0; background: #fff; border: 1px solid #b9cfe4; color: #175e9e; border-radius: 8px; padding: 10px 14px; font-size: 15px; cursor: pointer; }
+  .try button:hover { background: #175e9e; color: #fff; }
+  .card { background: #fff; border: 1px solid #e3ded6; border-radius: 10px; padding: 16px 18px; }
+  footer { border-top: 1px solid #e3ded6; padding: 20px; text-align: center; font-size: 13px; color: #6b665e; }
+  a { color: #175e9e; }
+</style>
+</head>
+<body>
+
+<div class="sample-banner">SAMPLE SITE — Northside Plumbing Co. is a fictional business. This page demos the Cornerstone Chat widget.</div>
+
+<header class="hero">
+  <h1>Northside Plumbing Co. (Sample)</h1>
+  <p>Fast, honest plumbing repair for the Janesville area. Free estimates, prices in writing before work starts, and a plumber on call around the clock.</p>
+  <a class="cta" href="#contact">Call (555) 014-2900</a>
+</header>
+
+<main>
+  <h2>Our services</h2>
+  <ul class="services">
+    <li><strong>Drain cleaning</strong>Slow or clogged drains cleared the same week — most within 1 to 2 business days.</li>
+    <li><strong>Water heaters</strong>Repair and replacement, with the full price in writing before we start.</li>
+    <li><strong>Leak repair</strong>We find the leak, show you the problem, and fix it with a 1-year labor warranty.</li>
+    <li><strong>Toilets &amp; faucets</strong>Running toilets, dripping faucets, and worn fixtures repaired or replaced.</li>
+    <li><strong>Sewer line service</strong>Camera inspection and honest options — repair only what needs repair.</li>
+    <li><strong>24/7 emergencies</strong>Burst pipes, major leaks, and sewer backups, any hour of the day or night.</li>
+  </ul>
+
+  <h2>Hours</h2>
+  <table class="hours">
+    <tr><td>Monday – Friday</td><td>7:00 a.m. – 5:00 p.m.</td></tr>
+    <tr><td>Saturday</td><td>8:00 a.m. – noon</td></tr>
+    <tr><td>Sunday</td><td>Closed</td></tr>
+    <tr><td>Emergencies</td><td>24 hours a day, 7 days a week</td></tr>
+  </table>
+
+  <h2>Try the chat</h2>
+  <div class="try">
+    <p>Tap a question — the assistant in the corner answers from our FAQ list, word for word. Anything it can't answer gets forwarded to the owner.</p>
+    <button type="button" data-ask="What are your hours?">“What are your hours?”</button>
+    <button type="button" data-ask="How much does a service call cost?">“How much does a service call cost?”</button>
+    <button type="button" data-ask="Do you fix water heaters?">“Do you fix water heaters?”</button>
+    <button type="button" data-ask="Can you remodel my kitchen?">“Can you remodel my kitchen?”</button>
+    <button type="button" data-ask="Do you sell gift cards?">“Do you sell gift cards?” (watch it forward this one to the owner)</button>
+  </div>
+
+  <h2 id="contact">Contact</h2>
+  <div class="card">
+    <p style="margin-top:0">Call <strong>(555) 014-2900</strong> or use the chat in the corner of this page. We serve Janesville, Beloit, Milton, and Edgerton, and homes within about 25 miles of Janesville.</p>
+    <p style="margin-bottom:0">Current special: <strong>$25 off your first service call</strong>, through December 31, 2026. Mention the website special when you book.</p>
+  </div>
+</main>
+
+<footer>
+  SAMPLE SITE — a fictional business built by Cornerstone Web Studio to demo the Cornerstone Chat widget. No real prices, claims, or contact details.
+</footer>
+
+<script src="faq-data-sample.js"></script>
+<script src="cornerstone-chat.js"></script>
+<script>
+  document.querySelectorAll("[data-ask]").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      if (window.CornerstoneChat) {
+        window.CornerstoneChat.ask(btn.getAttribute("data-ask"));
+      }
+    });
+  });
+</script>
+</body>
+</html>
