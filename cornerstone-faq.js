@@ -148,6 +148,21 @@
                 "is in the checkup section of this page."
       },
       {
+        id: "seo",
+        intent: null,
+        keywords: ["seo", "search", "google", "found", "rank", "ranking", "rankings", "engines", "optimization"],
+        phrases: ["do you offer seo", "search engine", "search rank", "search ranking", "get found", "found on google", "google listing", "rank on google"],
+        answer: "Yes, in two parts. Every site we build is SEO-ready at no " +
+                "extra charge: correct page titles and descriptions, image " +
+                "alt text, a sitemap, and your town and service words in the " +
+                "copy. The Local SEO Setup add-on is $149 one time: your " +
+                "Google Business Profile set up and filled out, listings on " +
+                "Bing Places, Apple Maps, and Yelp, and a review-request link " +
+                "to share. One honest limit: we never promise a search rank, " +
+                "traffic, or leads. SEO with us is setup only — there is no " +
+                "monthly SEO service."
+      },
+      {
         id: "notdo",
         intent: null,
         keywords: ["ecommerce", "store", "shop", "app", "apps", "software", "sell", "cart", "booking system"],
