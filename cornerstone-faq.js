@@ -163,6 +163,21 @@
                 "monthly SEO service."
       },
       {
+        id: "trendvideo",
+        intent: null,
+        keywords: ["video", "videos", "trend", "trending", "reels", "tiktok", "shorts", "ad", "ads", "advertising", "commercial"],
+        phrases: ["video ad", "video ads", "trend video", "product video", "make a video", "tiktok ad", "reels ad"],
+        answer: "Yes. The Trend Video Ad add-on is $149: send one clear " +
+                "photo of your product, and we put it into one short " +
+                "vertical video in a current trend format, ready to post " +
+                "on Reels, TikTok, or Shorts. Three videos are $349, and " +
+                "Care Plan customers can add one fresh video a month for " +
+                "$79 per month. Delivery takes 3 business days, and one " +
+                "re-roll is included. The video is AI-made, so keep the " +
+                "platform AI label on when you post. We never promise " +
+                "views or sales."
+      },
+      {
         id: "notdo",
         intent: null,
         keywords: ["ecommerce", "store", "shop", "app", "apps", "software", "sell", "cart", "booking system"],
