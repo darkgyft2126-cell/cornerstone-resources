@@ -132,6 +132,22 @@
   .spec div:last-child { border-bottom: none; }
   .spec dt { color: var(--mut); } .spec dd { margin: 0; color: var(--navy-deep); font-weight: 600; text-align: right; }
 
+  /* ---------- trend video showcase ---------- */
+  .showcase { display: grid; grid-template-columns: 300px 1fr; gap: 48px; align-items: center; margin-top: 30px; }
+  .phone {
+    width: 300px; border-radius: 34px; padding: 10px; background: #10151C;
+    box-shadow: 0 24px 48px rgba(22,41,74,.28), 0 2px 6px rgba(22,41,74,.25);
+  }
+  .phone video { display: block; width: 100%; aspect-ratio: 9 / 16; border-radius: 26px; object-fit: cover; background: #10151C; }
+  .showcase h3 { font-family: var(--serif); font-size: 24px; font-weight: 600; color: var(--navy-deep); margin: 0 0 10px; }
+  .showcase p { margin: 0 0 14px; max-width: 34em; }
+  .showcase ul { list-style: none; margin: 0 0 18px; padding: 0; font-size: 15.5px; color: var(--body); line-height: 1.6; }
+  .showcase ul li { padding: 3px 0 3px 20px; position: relative; }
+  .showcase ul li::before { content: "—"; position: absolute; left: 0; color: var(--brass); }
+  .showcase .fine { font-size: 13.5px; color: var(--mut); }
+  .card a.watch { display: inline-block; margin-top: 14px; font-size: 14.5px; font-weight: 600; color: var(--navy); text-decoration: none; border-bottom: 1px solid var(--brass); }
+  @media (max-width: 880px) { .showcase { grid-template-columns: 1fr; gap: 28px; } .phone { margin: 0 auto; } }
+
   /* ---------- craft note ---------- */
   .craft { background: var(--navy-deep); border-radius: 6px; padding: 40px 44px; margin-top: 64px; }
   .craft .eyebrow { color: #D8B96A; }
@@ -295,13 +311,39 @@
           <li>Three for $349</li>
           <li>Or one a month on the Care Plan, +$79/mo</li>
         </ul>
+        <a class="watch" href="#trend-video">See one play &#8595;</a>
       </div>
     </div>
     <p class="note-line">Every site is SEO-ready at no extra charge: correct page titles and descriptions, image alt text, a sitemap, and your town and service words in the copy. The Local SEO Setup goes further, into the listings. We never promise a search rank — no honest builder can.</p>
   </section>
 
+  <section aria-labelledby="trend-video-h" id="trend-video">
+    <div class="sec-head"><span class="sec-num">No. 03</span><h2 id="trend-video-h">The Trend Video Ad, in motion</h2></div>
+    <p class="sec-lede">This is the add-on, playing. A jar of local honey, one product photo, and a format the whole internet is watching this month.</p>
+    <div class="showcase">
+      <div class="phone">
+        <video autoplay muted loop playsinline preload="metadata" poster="trend-sample-poster.jpg" aria-label="Sample Trend Video Ad: a jar of honey launches up a ramp at dusk and lands on a crate">
+          <source src="trend-sample.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div>
+        <h3>One photo in. This comes out.</h3>
+        <p>You send one clear photo of your product. We place it into a current trend format and finish it to the standard you see here — graded, timed, and ready to post.</p>
+        <ul>
+          <li>Vertical 9:16, about 10 seconds</li>
+          <li>Ready for Reels, TikTok, or Shorts</li>
+          <li>One re-roll included if the first cut misses</li>
+          <li>Delivered in 3 business days</li>
+        </ul>
+        <p><strong>$149</strong> for one &middot; <strong>$349</strong> for three &middot; or one fresh video a month on the Care Plan, <strong>+$79/mo</strong>.</p>
+        <p class="fine">The sample above is AI-made, like every Trend Video Ad, and labeled as such wherever it posts. We never promise views or sales — we promise a finished ad that looks like it cost a crew.</p>
+        <p><a class="btn" href="mailto:hello@getcornerstoneweb.com?subject=Trend%20Video%20Ad">Order a Trend Video Ad</a></p>
+      </div>
+    </div>
+  </section>
+
   <section aria-labelledby="chat">
-    <div class="sec-head"><span class="sec-num">No. 03</span><h2 id="chat">Your website should answer the phone, too</h2></div>
+    <div class="sec-head"><span class="sec-num">No. 04</span><h2 id="chat">Your website should answer the phone, too</h2></div>
     <div class="feature">
       <div>
         <p>Most business websites are brochures. They look fine, and they say nothing back. When a customer asks a question at 9&nbsp;pm, a brochure gives them silence — and they call the next name on the list.</p>
@@ -325,7 +367,7 @@
   </div>
 
   <section aria-labelledby="checkup">
-    <div class="sec-head"><span class="sec-num">No. 04</span><h2 id="checkup">Before you decide</h2></div>
+    <div class="sec-head"><span class="sec-num">No. 05</span><h2 id="checkup">Before you decide</h2></div>
     <div class="checkup">
       <div>
         <h3>The 10-Point Website Checkup</h3>
