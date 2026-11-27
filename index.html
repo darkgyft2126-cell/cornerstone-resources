@@ -5,130 +5,374 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cornerstone Web Studio — Websites for Small Businesses</title>
 <meta name="description" content="Cornerstone Web Studio builds simple websites for small businesses. Each site can answer customer questions day and night, from the owner's own answers. Free sample homepage first.">
+<meta name="theme-color" content="#1F3A5F">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cornerstone Web Studio">
+<meta property="og:title" content="Cornerstone Web Studio — Websites for Small Businesses">
+<meta property="og:description" content="Flat-price websites for small businesses, built by hand and finished with care. Free sample homepage first — you pay nothing until you approve it.">
+<meta property="og:url" content="https://getcornerstoneweb.com/">
+<meta property="og:image" content="https://getcornerstoneweb.com/cornerstone-logo.png">
+<link rel="icon" type="image/png" href="cornerstone-logo.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Cornerstone Web Studio",
+  "url": "https://getcornerstoneweb.com/",
+  "email": "hello@getcornerstoneweb.com",
+  "telephone": "+1-608-352-0644",
+  "address": { "@type": "PostalAddress", "addressLocality": "Janesville", "addressRegion": "WI", "addressCountry": "US" },
+  "areaServed": "United States",
+  "description": "Flat-price websites for small businesses. One-page sites for $399, standard sites for $799, CMS sites for $999. Free sample homepage first."
+}
+</script>
 <style>
-  body { font-family: Georgia, 'Times New Roman', serif; margin: 0; color: #1a1a1a; background: #f7f9fb; }
-  main { max-width: 880px; margin: 0 auto; padding: 32px 20px 48px; }
-  header.site { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; border-bottom: 2px solid #1F3A5F; padding-bottom: 18px; }
-  header.site img { width: 56px; height: 56px; border-radius: 10px; }
-  .brand-name { font-family: Helvetica, Arial, sans-serif; font-weight: bold; letter-spacing: .06em; color: #1F3A5F; font-size: 19px; text-transform: uppercase; }
-  .brand-sub { font-family: Helvetica, Arial, sans-serif; font-size: 13px; color: #5A6572; margin-top: 3px; }
-  .head-contact { margin-left: auto; font-family: Helvetica, Arial, sans-serif; font-size: 14px; text-align: right; line-height: 1.6; }
-  .head-contact a { color: #1F3A5F; text-decoration: none; font-weight: bold; }
-  h1 { color: #1F3A5F; font-size: 34px; line-height: 1.2; margin: 34px 0 10px; }
-  h2 { color: #1F3A5F; font-size: 25px; margin: 52px 0 8px; }
-  p { line-height: 1.6; color: #3D4A5C; font-size: 17px; }
-  .hero-sub { font-size: 19px; }
-  a.btn { display: inline-block; margin: 12px 10px 0 0; padding: 12px 20px; background: #1F3A5F; color: #fff; text-decoration: none; border-radius: 6px; font-family: Helvetica, Arial, sans-serif; font-size: 15px; }
-  a.btn.light { background: #fff; color: #1F3A5F; border: 1px solid #1F3A5F; }
-  ol.steps { color: #3D4A5C; font-size: 17px; line-height: 1.6; padding-left: 22px; }
-  ol.steps li { margin-bottom: 10px; }
-  ol.steps strong { color: #1F3A5F; }
-  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(185px, 1fr)); gap: 14px; margin-top: 18px; }
-  .card { background: #fff; border: 1px solid #d8dee6; border-radius: 10px; padding: 18px; }
-  .card h3 { font-family: Helvetica, Arial, sans-serif; color: #1F3A5F; font-size: 16px; margin: 0 0 6px; }
-  .price { font-family: Helvetica, Arial, sans-serif; font-size: 26px; font-weight: bold; color: #1a1a1a; }
-  .per { font-family: Helvetica, Arial, sans-serif; font-size: 13px; color: #5A6572; }
-  .card p { font-size: 15px; margin: 10px 0 0; }
-  ul.facts { color: #3D4A5C; font-size: 17px; line-height: 1.7; padding-left: 20px; }
-  .cta-band { margin-top: 52px; background: #1F3A5F; border-radius: 10px; padding: 24px; }
-  .cta-band h2 { color: #fff; margin: 0 0 6px; }
-  .cta-band p { color: #dbe4ef; margin: 0; }
-  .cta-band a { color: #fff; font-weight: bold; }
-  footer { margin-top: 48px; font-size: 13px; color: #5A6572; font-family: Helvetica, Arial, sans-serif; border-top: 1px solid #d8dee6; padding-top: 16px; }
-  footer a { color: #1F3A5F; text-decoration: none; }
+  :root {
+    --paper: #FAF7F1;
+    --ink: #1C2B3A;
+    --navy: #1F3A5F;
+    --navy-deep: #16294A;
+    --brass: #A8842C;
+    --mut: #5C6672;
+    --body: #3D4A5C;
+    --line: #E4DCCB;
+    --line-soft: #EDE7D9;
+    --card: #FFFFFF;
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0; color: var(--ink); background: var(--paper);
+    font-family: var(--sans); font-size: 17px; line-height: 1.65;
+    -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+  }
+  ::selection { background: #EBDCB4; }
+  a:focus-visible, summary:focus-visible { outline: 2px solid var(--brass); outline-offset: 3px; }
+  .wrap { max-width: 1060px; margin: 0 auto; padding: 0 24px; }
+
+  /* ---------- header ---------- */
+  header.site { border-bottom: 1px solid var(--line); }
+  .site-in { display: flex; align-items: center; gap: 16px; padding: 22px 0; flex-wrap: wrap; }
+  .site-in img { width: 54px; height: 54px; border-radius: 12px; box-shadow: 0 1px 3px rgba(28,43,58,.18); }
+  .brand-name { font-family: var(--sans); font-weight: 700; letter-spacing: .14em; color: var(--navy); font-size: 16px; text-transform: uppercase; }
+  .brand-sub { font-size: 13.5px; color: var(--mut); margin-top: 2px; letter-spacing: .02em; }
+  .head-contact { margin-left: auto; font-size: 14.5px; text-align: right; line-height: 1.55; }
+  .head-contact a { color: var(--navy); text-decoration: none; font-weight: 600; border-bottom: 1px solid transparent; transition: border-color .15s ease; }
+  .head-contact a:hover { border-bottom-color: var(--brass); }
+  .head-contact .hc-label { display: block; font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: var(--brass); font-weight: 700; }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 72px 0 0; text-align: left; }
+  .eyebrow { font-size: 12px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--brass); margin: 0 0 20px; }
+  .eyebrow::after { content: ""; display: block; width: 56px; height: 2px; background: var(--brass); margin-top: 14px; }
+  h1 { font-family: var(--serif); font-weight: 600; color: var(--navy-deep); font-size: 50px; line-height: 1.12; letter-spacing: -.01em; margin: 0 0 22px; max-width: 15.5em; }
+  h1 em { font-style: italic; color: var(--navy); }
+  .hero-sub { font-size: 19.5px; line-height: 1.6; color: var(--body); max-width: 38em; margin: 0 0 30px; }
+  .btns { display: flex; gap: 12px; flex-wrap: wrap; }
+  a.btn {
+    display: inline-block; padding: 13px 24px; background: var(--navy); color: #fff; text-decoration: none;
+    border-radius: 4px; font-size: 15px; font-weight: 600; letter-spacing: .01em;
+    box-shadow: 0 1px 2px rgba(22,41,74,.25); transition: background .15s ease, transform .15s ease, box-shadow .15s ease;
+  }
+  a.btn:hover { background: var(--navy-deep); transform: translateY(-1px); box-shadow: 0 4px 10px rgba(22,41,74,.22); }
+  a.btn.light { background: transparent; color: var(--navy); border: 1px solid var(--navy); box-shadow: none; }
+  a.btn.light:hover { background: #fff; }
+  .detail-strip {
+    margin-top: 54px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+    padding: 16px 0; display: flex; flex-wrap: wrap; gap: 10px 34px;
+    font-size: 13.5px; letter-spacing: .04em; color: var(--mut);
+  }
+  .detail-strip strong { color: var(--navy); font-weight: 700; }
+
+  /* ---------- sections ---------- */
+  section { padding: 64px 0 0; }
+  .sec-head { display: flex; align-items: baseline; gap: 18px; margin-bottom: 10px; }
+  .sec-num { font-family: var(--serif); font-style: italic; font-size: 15px; color: var(--brass); white-space: nowrap; }
+  h2 { font-family: var(--serif); font-weight: 600; color: var(--navy-deep); font-size: 31px; line-height: 1.2; margin: 0; }
+  .sec-lede { color: var(--body); max-width: 40em; margin: 8px 0 0; }
+  p { color: var(--body); }
+
+  /* ---------- steps ---------- */
+  ol.steps { list-style: none; counter-reset: step; margin: 30px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border-top: 1px solid var(--line); }
+  ol.steps li { counter-increment: step; padding: 26px 26px 6px 0; border-bottom: 1px solid var(--line); }
+  ol.steps li + li { padding-left: 26px; border-left: 1px solid var(--line-soft); }
+  ol.steps li::before {
+    content: counter(step, decimal-leading-zero); display: block;
+    font-family: var(--serif); font-size: 30px; color: var(--brass); margin-bottom: 12px;
+  }
+  ol.steps strong { display: block; color: var(--navy-deep); font-size: 16.5px; margin-bottom: 6px; }
+  ol.steps span { color: var(--body); font-size: 15.5px; line-height: 1.6; display: block; }
+
+  /* ---------- packages ---------- */
+  .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 30px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line); border-radius: 6px; padding: 26px 24px 24px;
+    display: flex; flex-direction: column; position: relative;
+    transition: border-color .15s ease, box-shadow .15s ease, transform .15s ease;
+  }
+  .card::before { content: ""; position: absolute; top: 0; left: 24px; right: 24px; height: 2px; background: transparent; transition: background .15s ease; }
+  .card:hover { border-color: #CDBF9E; box-shadow: 0 10px 24px rgba(28,43,58,.08); transform: translateY(-2px); }
+  .card:hover::before { background: var(--brass); }
+  .card h3 { font-family: var(--sans); font-size: 13px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--navy); margin: 0 0 14px; }
+  .price { font-family: var(--serif); font-size: 38px; font-weight: 600; color: var(--ink); line-height: 1; }
+  .per { font-size: 13px; color: var(--mut); margin-top: 6px; letter-spacing: .02em; }
+  .card p { font-size: 15px; line-height: 1.6; margin: 14px 0 0; }
+  .card ul { list-style: none; margin: 14px 0 0; padding: 14px 0 0; border-top: 1px solid var(--line-soft); font-size: 14.5px; color: var(--body); line-height: 1.55; }
+  .card ul li { padding: 3px 0 3px 20px; position: relative; }
+  .card ul li::before { content: "—"; position: absolute; left: 0; color: var(--brass); }
+  .note-line { margin-top: 22px; font-size: 15.5px; color: var(--body); border-left: 2px solid var(--brass); padding-left: 16px; max-width: 46em; }
+
+  /* ---------- chat feature ---------- */
+  .feature { display: grid; grid-template-columns: 1.25fr .75fr; gap: 44px; align-items: start; }
+  .feature p { margin: 0 0 14px; }
+  .spec { border: 1px solid var(--line); border-radius: 6px; background: #fff; padding: 8px 22px; }
+  .spec div { display: flex; justify-content: space-between; gap: 16px; padding: 13px 0; border-bottom: 1px solid var(--line-soft); font-size: 14.5px; }
+  .spec div:last-child { border-bottom: none; }
+  .spec dt { color: var(--mut); } .spec dd { margin: 0; color: var(--navy-deep); font-weight: 600; text-align: right; }
+
+  /* ---------- craft note ---------- */
+  .craft { background: var(--navy-deep); border-radius: 6px; padding: 40px 44px; margin-top: 64px; }
+  .craft .eyebrow { color: #D8B96A; }
+  .craft .eyebrow::after { background: #D8B96A; }
+  .craft h2 { color: #fff; }
+  .craft p { color: #C9D4E4; max-width: 44em; margin: 12px 0 0; }
+  .craft p strong { color: #fff; }
+
+  /* ---------- checkup + faq ---------- */
+  .checkup { display: flex; gap: 26px; align-items: center; border: 1px solid var(--line); background: #fff; border-radius: 6px; padding: 28px 30px; margin-top: 30px; flex-wrap: wrap; }
+  .checkup div { flex: 1 1 320px; }
+  .checkup h3 { font-family: var(--serif); font-size: 21px; color: var(--navy-deep); margin: 0 0 6px; font-weight: 600; }
+  .checkup p { margin: 0; font-size: 15.5px; }
+  .faq { margin-top: 28px; border-top: 1px solid var(--line); }
+  .faq details { border-bottom: 1px solid var(--line); }
+  .faq summary {
+    cursor: pointer; list-style: none; padding: 18px 30px 18px 0; position: relative;
+    font-weight: 600; color: var(--navy-deep); font-size: 16.5px;
+  }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary::after { content: "+"; position: absolute; right: 4px; top: 14px; font-family: var(--serif); font-size: 22px; color: var(--brass); }
+  .faq details[open ] summary::after { content: "–"; }
+  .faq details p { margin: 0; padding: 0 30px 20px 0; font-size: 15.5px; max-width: 44em; }
+
+  /* ---------- cta + footer ---------- */
+  .cta-band { margin-top: 64px; border: 1px solid var(--navy); border-radius: 6px; padding: 38px 44px; background: #fff; text-align: left; }
+  .cta-band h2 { margin-bottom: 8px; }
+  .cta-band p { margin: 0 0 20px; max-width: 40em; }
+  footer { margin-top: 56px; border-top: 1px solid var(--line); padding: 26px 0 40px; font-size: 13.5px; color: var(--mut); line-height: 1.7; }
+  footer .f-brand { font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--navy); font-size: 12.5px; }
+  footer a { color: var(--navy); text-decoration: none; font-weight: 600; }
+  footer a:hover { text-decoration: underline; }
+
+  @media (max-width: 880px) {
+    .cards { grid-template-columns: repeat(2, 1fr); }
+    .feature { grid-template-columns: 1fr; gap: 26px; }
+    ol.steps { grid-template-columns: 1fr; }
+    ol.steps li + li { padding-left: 0; border-left: none; }
+    h1 { font-size: 40px; }
+  }
   @media (max-width: 560px) {
-    h1 { font-size: 28px; }
+    .cards { grid-template-columns: 1fr; }
+    .hero { padding-top: 48px; }
+    h1 { font-size: 33px; }
     .head-contact { margin-left: 0; text-align: left; }
+    .craft, .cta-band { padding: 30px 24px; }
+    section { padding-top: 48px; }
   }
 </style>
 </head>
 <body>
-<main>
-  <header class="site">
-    <img src="cornerstone-logo.png" alt="Cornerstone Web Studio logo">
+
+<header class="site">
+  <div class="wrap site-in">
+    <img src="cornerstone-logo.png" alt="Cornerstone Web Studio logo" width="54" height="54">
     <div>
       <div class="brand-name">Cornerstone Web Studio</div>
       <div class="brand-sub">Websites for small businesses</div>
     </div>
     <div class="head-contact">
+      <span class="hc-label">Talk to us</span>
       <a href="mailto:hello@getcornerstoneweb.com">hello@getcornerstoneweb.com</a><br>
       <a href="tel:+16083520644">(608) 352-0644</a>
     </div>
-  </header>
+  </div>
+</header>
 
-  <h1>A website that can't answer questions is the old model.</h1>
-  <p class="hero-sub">Cornerstone Web Studio builds simple websites for small businesses. Each site can answer customer questions day and night, from the owner's own answers. The assistant on this page is a working example — try it.</p>
-  <a class="btn" href="#packages">See the packages</a>
-  <a class="btn light" href="chat-demo/">Try the sample chat</a>
+<main class="wrap">
 
-  <h2>How it works</h2>
-  <ol class="steps">
-    <li><strong>We build a sample homepage first, free.</strong> You see your site before you pay.</li>
-    <li><strong>You approve it and pay a 50% deposit.</strong> Each site includes two revision rounds.</li>
-    <li><strong>Your site goes live in 10 business days.</strong> You pay the other 50% on launch. You own the site and the domain. There is no contract.</li>
-  </ol>
-
-  <h2 id="packages">Packages</h2>
-  <div class="cards">
-    <div class="card">
-      <h3>One-Page Site</h3>
-      <div class="price">$399</div>
-      <div class="per">one time</div>
-      <p>One page with your services, your area, and a tap-to-call button. Cornerstone Chat is a $99 add-on.</p>
+  <div class="hero">
+    <p class="eyebrow">Cornerstone Web Studio</p>
+    <h1>A website that can&rsquo;t answer questions is <em>the old model.</em></h1>
+    <p class="hero-sub">We build simple websites for small businesses — finished by hand, priced flat, and owned by you. Each site can answer customer questions day and night, from your own answers. The assistant on this page is a working example. Try it.</p>
+    <div class="btns">
+      <a class="btn" href="#packages">See the packages</a>
+      <a class="btn light" href="chat-demo/">Try the sample chat</a>
     </div>
-    <div class="card">
-      <h3>Standard Site</h3>
-      <div class="price">$799</div>
-      <div class="per">one time</div>
-      <p>A full site with room for your services, your story, and your contact page. Cornerstone Chat included.</p>
-    </div>
-    <div class="card">
-      <h3>CMS Site</h3>
-      <div class="price">$999</div>
-      <div class="per">one time</div>
-      <p>A full site you can update yourself — change the words and pictures when you want. Cornerstone Chat included.</p>
-    </div>
-    <div class="card">
-      <h3>Care Plan</h3>
-      <div class="price">$49</div>
-      <div class="per">per month, optional</div>
-      <p>We make your updates for you: site changes and chat answer updates. Send the change, we do the work.</p>
-    </div>
-    <div class="card">
-      <h3>Local SEO Setup</h3>
-      <div class="price">$149</div>
-      <div class="per">one time, add-on</div>
-      <p>Your Google Business Profile set up and filled out, listings on Bing Places, Apple Maps, and Yelp, and a review-request link to share. We never promise a search rank.</p>
-    </div>
-    <div class="card">
-      <h3>Trend Video Ad</h3>
-      <div class="price">$149</div>
-      <div class="per">one time, add-on</div>
-      <p>Send one photo of your product. We put it into a short vertical video in a current trend format, ready for Reels, TikTok, or Shorts. Three for $349, or one fresh video a month on the Care Plan for $79 more. AI-made and labeled; we never promise views.</p>
+    <div class="detail-strip">
+      <span><strong>Free</strong> sample homepage first</span>
+      <span><strong>Live in</strong> 10 business days</span>
+      <span><strong>You own</strong> the site and the domain</span>
+      <span><strong>No</strong> contract, ever</span>
     </div>
   </div>
-  <p>Every site we build is SEO-ready at no extra charge: correct page titles and descriptions, image alt text, a sitemap, and your town and service words in the copy.</p>
 
-  <h2>Your website should answer the phone, too.</h2>
-  <p>Most business websites are brochures. They look fine, and they say nothing back. When a customer asks a question at 9 pm, a brochure gives them silence — and they call the next name on the list.</p>
-  <p>Every Cornerstone Web Studio site can include Cornerstone Chat: an assistant trained on your own answers. You fill out one short form — your hours, your services, your prices, your area. The assistant answers from that form, word for word on prices and guarantees. It never guesses. A question outside the form goes straight to your email with the customer's name and contact, so the lead is yours, not lost.</p>
-  <ul class="facts">
-    <li>One-Page site: Cornerstone Chat available as a $99 add-on</li>
-    <li>Standard and CMS sites: Cornerstone Chat included</li>
-    <li>Care Plan: answer updates included — send new answers any time</li>
-  </ul>
-  <a class="btn" href="chat-demo/">Try it on our sample site</a>
+  <section aria-labelledby="how">
+    <div class="sec-head"><span class="sec-num">No. 01</span><h2 id="how">How it works</h2></div>
+    <ol class="steps">
+      <li><strong>We build a sample first — free</strong><span>We build a sample homepage for your business before you pay anything. You see your site, not a promise.</span></li>
+      <li><strong>You approve it, then a deposit</strong><span>When the sample looks right, you pay a 50% deposit and we build the full site. Each site includes two revision rounds.</span></li>
+      <li><strong>Live in 10 business days</strong><span>You pay the other 50% on launch. You own the site and the domain, and there is no contract holding you to us.</span></li>
+    </ol>
+  </section>
 
-  <h2>The 10-Point Website Checkup</h2>
-  <p>A free self-test for small business owners. Run it on your phone in about ten minutes: ten checks that show whether your website is sending customers to you — or to the next shop on the list.</p>
-  <a class="btn" href="website-checkup.pdf">Download the free checkup (PDF)</a>
+  <section aria-labelledby="packages">
+    <div class="sec-head"><span class="sec-num">No. 02</span><h2 id="packages">Packages</h2></div>
+    <p class="sec-lede">Flat prices, stated in full. What a package costs is what it costs — there is no quote process and no surprise line later.</p>
+    <div class="cards">
+      <div class="card">
+        <h3>One-Page Site</h3>
+        <div class="price">$399</div>
+        <div class="per">one time</div>
+        <p>One page that says what you do, where you work, and how to reach you.</p>
+        <ul>
+          <li>Your services and service area</li>
+          <li>Tap-to-call button</li>
+          <li>Cornerstone Chat: $99 add-on</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Standard Site</h3>
+        <div class="price">$799</div>
+        <div class="per">one time</div>
+        <p>A full site with room for your services, your story, and your contact page.</p>
+        <ul>
+          <li>Multiple pages</li>
+          <li>Cornerstone Chat included</li>
+          <li>Contact page that routes leads to you</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>CMS Site</h3>
+        <div class="price">$999</div>
+        <div class="per">one time</div>
+        <p>A full site you can update yourself — change the words and pictures when you want.</p>
+        <ul>
+          <li>Everything in Standard</li>
+          <li>Edit your own pages</li>
+          <li>Cornerstone Chat included</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Care Plan</h3>
+        <div class="price">$49</div>
+        <div class="per">per month · optional</div>
+        <p>We make your updates for you. Send the change; we do the work.</p>
+        <ul>
+          <li>Site changes done for you</li>
+          <li>Chat answer updates included</li>
+          <li>Cancel any time</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Local SEO Setup</h3>
+        <div class="price">$149</div>
+        <div class="per">one time · add-on</div>
+        <p>Your business set up properly where customers search first.</p>
+        <ul>
+          <li>Google Business Profile, filled out</li>
+          <li>Bing Places, Apple Maps, and Yelp</li>
+          <li>A review-request link to share</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Trend Video Ad</h3>
+        <div class="price">$149</div>
+        <div class="per">one time · add-on</div>
+        <p>Send one photo of your product. We put it into a short vertical video in a current trend format.</p>
+        <ul>
+          <li>Ready for Reels, TikTok, or Shorts</li>
+          <li>Three for $349</li>
+          <li>Or one a month on the Care Plan, +$79/mo</li>
+        </ul>
+      </div>
+    </div>
+    <p class="note-line">Every site is SEO-ready at no extra charge: correct page titles and descriptions, image alt text, a sitemap, and your town and service words in the copy. The Local SEO Setup goes further, into the listings. We never promise a search rank — no honest builder can.</p>
+  </section>
+
+  <section aria-labelledby="chat">
+    <div class="sec-head"><span class="sec-num">No. 03</span><h2 id="chat">Your website should answer the phone, too</h2></div>
+    <div class="feature">
+      <div>
+        <p>Most business websites are brochures. They look fine, and they say nothing back. When a customer asks a question at 9&nbsp;pm, a brochure gives them silence — and they call the next name on the list.</p>
+        <p>Cornerstone Chat is an assistant trained on <strong>your own answers</strong>. You fill out one short form — your hours, your services, your prices, your area. The assistant answers from that form, word for word on prices and guarantees. It never guesses. A question outside the form goes straight to your email with the customer&rsquo;s name and contact, so the lead is yours, not lost.</p>
+        <p><a class="btn light" href="chat-demo/">Try it on our sample site</a></p>
+      </div>
+      <dl class="spec">
+        <div><dt>One-Page Site</dt><dd>Chat: $99 add-on</dd></div>
+        <div><dt>Standard Site</dt><dd>Chat included</dd></div>
+        <div><dt>CMS Site</dt><dd>Chat included</dd></div>
+        <div><dt>Care Plan</dt><dd>Answer updates included</dd></div>
+        <div><dt>Answers it lacks</dt><dd>Sent to your email</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <div class="craft">
+    <p class="eyebrow">A note on this page</p>
+    <h2>This website is the sample</h2>
+    <p>We sell websites, so this one is built the way we build yours: <strong>by hand, line by line — no page builder, no rented template.</strong> It loads fast because there is nothing heavy in it. The words are plain because your customers are busy. The prices are on the page because hiding them wastes everyone&rsquo;s time. Judge our work the way your customers will judge yours: by what is in front of you.</p>
+  </div>
+
+  <section aria-labelledby="checkup">
+    <div class="sec-head"><span class="sec-num">No. 04</span><h2 id="checkup">Before you decide</h2></div>
+    <div class="checkup">
+      <div>
+        <h3>The 10-Point Website Checkup</h3>
+        <p>A free self-test for small business owners. Run it on your phone in about ten minutes: ten checks that show whether your website is sending customers to you — or to the next shop on the list.</p>
+      </div>
+      <a class="btn" href="website-checkup.pdf">Download the free checkup (PDF)</a>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>How long until my site is live?</summary>
+        <p>Ten business days from your approval of the sample and your deposit. You pay the balance on launch day, not before.</p>
+      </details>
+      <details>
+        <summary>Do I own my website?</summary>
+        <p>Yes — the site, the domain, and the content are yours. If you ever move to another builder, everything goes with you.</p>
+      </details>
+      <details>
+        <summary>What do you need from me to start?</summary>
+        <p>Your business name and what you do. That is enough for the free sample. For the full site we ask for your services, hours, service area, and the answers you want the chat assistant to give.</p>
+      </details>
+      <details>
+        <summary>Will my site be first on Google?</summary>
+        <p>No one can promise that, and you should not trust a builder who does. Every site we build is SEO-ready at no extra charge, and the Local SEO Setup puts your listings in order. Rank depends on your market and your reviews, and we will tell you that plainly.</p>
+      </details>
+      <details>
+        <summary>What if I need changes after launch?</summary>
+        <p>On a CMS Site, you can change words and pictures yourself. On any site, the Care Plan covers it: send the change and we make it for you, for $49 a month, cancel any time.</p>
+      </details>
+    </div>
+  </section>
 
   <div class="cta-band">
+    <p class="eyebrow">Start here</p>
     <h2>Start with a free sample</h2>
-    <p>Email <a href="mailto:hello@getcornerstoneweb.com">hello@getcornerstoneweb.com</a> or call (608) 352-0644. Tell us your business name and what you do. We build your sample homepage first — you pay nothing until you approve it.</p>
+    <p>Email us or call. Tell us your business name and what you do. We build your sample homepage first — you pay nothing until you approve it.</p>
+    <div class="btns">
+      <a class="btn" href="mailto:hello@getcornerstoneweb.com">hello@getcornerstoneweb.com</a>
+      <a class="btn light" href="tel:+16083520644">Call (608) 352-0644</a>
+    </div>
   </div>
 
-  <footer>Cornerstone Web Studio · getcornerstoneweb.com · Based in Janesville, Wisconsin, serving small businesses nationwide. This Cornerstone Web Studio is not affiliated with any other firm of the same name. · <a href="mailto:hello@getcornerstoneweb.com">hello@getcornerstoneweb.com</a> · <a href="tel:+16083520644">(608) 352-0644</a></footer>
+  <footer>
+    <div class="f-brand">Cornerstone Web Studio</div>
+    getcornerstoneweb.com · Based in Janesville, Wisconsin, serving small businesses nationwide. This Cornerstone Web Studio is not affiliated with any other firm of the same name.<br>
+    <a href="mailto:hello@getcornerstoneweb.com">hello@getcornerstoneweb.com</a> · <a href="tel:+16083520644">(608) 352-0644</a>
+  </footer>
+
 </main>
 <script src="cornerstone-faq.js"></script>
 <script src="cornerstone-chat.js"></script>
